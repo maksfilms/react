@@ -4,8 +4,9 @@ type RatingPropsType = {
     value: 0 | 1 | 2 | 3 | 4 | 5
 }
 
-function Rating(props: RatingPropsType) {
+export function Rating(props: RatingPropsType) {
     console.log("Rating rendering")
+
     if (props.value === 1) {
         return (
             <div>
@@ -84,7 +85,4 @@ function Star(props: StarPropsType) {
     } else {
         return <span>star </span>
     }
-
 }
-
-export default Rating;
