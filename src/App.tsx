@@ -4,6 +4,7 @@ import {Accordion} from './components/Accordion/Accordion'
 import {Rating} from "./components/Rating/Rating";
 import OnOff from "./components/OnOff/OnOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion/Accordion";
+import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 
 
 function hello() {
@@ -16,10 +17,19 @@ function hello() {
 function App() {
     console.log("App rendering")
     return (
-        <div>
+        <div className={"App"}>
             <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
+
             <UncontrolledAccordion titleValue={"Menu"}/>
             <UncontrolledAccordion titleValue={"Menu"}/>
+
+
+            <Rating value={2} />
+
+            <UncontrolledRating />
 
             {/*<Accordion titleValue={"Menu"} collapsed={true} />
             <Accordion titleValue={"Users"} collapsed={false}/>*/}
